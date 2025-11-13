@@ -6,9 +6,9 @@ SELECT account_id, account_firstname, account_lastname, account_email, account_t
 FROM public.account
 WHERE account_email = 'tony@starkent.com';
 
--- 2) Update to Admin  (ENUM uses 'Admin' with capital A)
+-- 2) Update to Admin 
 UPDATE public.account
-SET account_type = 'Admin'
+SET account_type = 'admin'
 WHERE account_email = 'tony@starkent.com';
 
 SELECT account_email, account_type
